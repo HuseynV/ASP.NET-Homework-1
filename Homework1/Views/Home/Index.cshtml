@@ -1,0 +1,35 @@
+﻿@model Homework1.ViewModels.DatasViewModel
+
+<div style="background-color:darkgray">
+    <h1>Drinks</h1>
+    <ul>
+        @foreach (var item in Model.Drinks)
+        {
+            <li>Name : @item.Name</li>
+            <li>Description : @item.Description</li>
+            <hr />
+            <br />
+        }
+    </ul>
+    <hr />
+    <h1>Hot Meals</h1>
+    <ul>
+        @foreach (var item in Model.HotMeals)
+        {
+            <li>Name : @item.Name</li>
+            <li>Description : @item.Description</li>
+            <hr />
+            <br />
+        }
+    </ul>
+    <h1>Fast Foods</h1>
+    <ul>
+        @foreach (var item in Model.FastFoods)
+        {
+            <li>Name : @item.Name</li>
+            <li>Description : @item.Description</li>
+            <hr />
+            <br />
+        }
+    </ul>
+</div>
